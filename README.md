@@ -50,7 +50,8 @@ The data was divided into **training, development, and test sets**, preserving t
 A pretrained **RoBERTa** model was fine-tuned for six-class classification.The test set was then used only for evaluation.
 
 ## Results
-The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.
+The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.Accuracy: 64.75%
+Macro-F1: 0.6479.
 
 | Category    | Precision | Recall |     F1 |
 | ----------- | --------: | -----: | -----: |
