@@ -1,0 +1,92 @@
+Using GPU: Tesla T4
+[942/942 02:21, Epoch 3/3]
+Epoch	Train.L	Val.Loss	Accuracy	Macro F1	Weighted F1
+1	    1.044904	0.964226	0.661882	0.657884	0.660859
+2	    0.837318	0.935379	0.682616	0.682933	0.680984
+3	    0.632707	0.932157	0.685805	0.685759	0.684499
+
+Writing model shards: 100%
+ 1/1 [00:01<00:00,  1.58s/it]
+Writing model shards: 100%
+ 1/1 [00:02<00:00,  2.30s/it]
+Writing model shards: 100%
+ 1/1 [00:02<00:00,  2.08s/it]
+TrainOutput(global_step=942, training_loss=0.9472494753049944, metrics={'train_runtime': 142.1637, 'train_samples_per_second': 105.765, 'train_steps_per_second': 6.626, 'total_flos': 989069977663488.0, 'train_loss': 0.9472494753049944, 'epoch': 3.0})
+
+
+
+
+
+TEST SET RESULTS
+----------------
+Accuracy:     0.6475
+Macro-F1:     0.6479
+Weighted-F1:  0.6473
+
+PER-CATEGORY RESULTS
+--------------------
+              precision    recall  f1-score   support
+
+   Grievance     0.6824    0.6558    0.6689       154
+  Incitement     0.5954    0.6142    0.6047       127
+ Stereotypes     0.6726    0.6667    0.6696       114
+ Inferiority     0.6310    0.6092    0.6199        87
+       Irony     0.6857    0.6076    0.6443        79
+     Threats     0.6173    0.7576    0.6803        66
+
+    accuracy                         0.6475       627
+   macro avg     0.6474    0.6518    0.6479       627
+weighted avg     0.6494    0.6475    0.6473       627
+
+
+CONFUSION MATRIX
+----------------
+[[101  22  14   8   1   8]
+ [ 17  78  15   3   2  12]
+ [ 15  11  76   6   3   3]
+ [  5   9   3  53  14   3]
+ [  6   4   4  12  48   5]
+ [  4   7   1   2   2  50]]
+
+
+
+
+
+Total test examples: 627
+Misclassified examples: 221
+Correct examples: 406
+
+========================================
+ERROR COUNTS: TRUE → PREDICTED
+========================================
+ true_label predicted_label  count
+  Grievance      Incitement     22
+  Grievance     Stereotypes     14
+  Grievance     Inferiority      8
+  Grievance         Threats      8
+  Grievance           Irony      1
+ Incitement       Grievance     17
+ Incitement     Stereotypes     15
+ Incitement         Threats     12
+ Incitement     Inferiority      3
+ Incitement           Irony      2
+Inferiority           Irony     14
+Inferiority      Incitement      9
+Inferiority       Grievance      5
+Inferiority     Stereotypes      3
+Inferiority         Threats      3
+      Irony     Inferiority     12
+      Irony       Grievance      6
+      Irony         Threats      5
+      Irony      Incitement      4
+      Irony     Stereotypes      4
+Stereotypes       Grievance     15
+Stereotypes      Incitement     11
+Stereotypes     Inferiority      6
+Stereotypes           Irony      3
+Stereotypes         Threats      3
+    Threats      Incitement      7
+    Threats       Grievance      4
+    Threats     Inferiority      2
+    Threats           Irony      2
+    Threats     Stereotypes      1
