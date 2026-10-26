@@ -1,17 +1,21 @@
-Architecture Design:
+## Architecture Design:
 A single, shared Transformer encoder learns general representations.
 Two separate dense Linear projection layers sit on top of the shared [CLS] token output:
 Head A: Classifies Hate Speech.
 Head B: Classifies Irony.
-Testing Methodology
+## Testing Methodology
 Shared Gradient Updates: In every step (or every few steps), gradients flow backwards from both heads into the shared Transformer backbone.
 Loss Weighting (α): The combined loss is formulated as:
-Total Loss=α⋅Loss 
-Primary
+
+L 
+total
 ​	
- +(1−α)⋅Loss 
-Auxiliary
+ =α⋅L 
+IHC
 ​	
+ +(1−α)⋅L 
+Irony
+​
  
-Evaluation Strategy. 
+## Evaluation Strategy. 
 Primary metrics focus on Macro-F1 and Accuracy for the main task, comparing the Multi-Task model directly against a Single-Task baseline (trained on the primary task only).
