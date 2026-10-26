@@ -19,3 +19,8 @@ Irony
  
 ## Evaluation Strategy. 
 Primary metrics focus on Macro-F1 and Accuracy for the main task, comparing the Multi-Task model directly against a Single-Task baseline (trained on the primary task only).
+Since HateXplain is not perfectly balanced, Macro F1 is the most important metric. It gives equal importance to:
+- Normal
+- Offensive
+- Hate Speech
+This prevents the model from looking good simply because it predicts the majority class well.
