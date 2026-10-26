@@ -1,0 +1,14 @@
+
+1. "A Multitask Learning Approach for Hate Speech and Sarcasm/Irony Detection"
+Authors: Prashant Kapoor, Suman K. K., and Amitava Das
+Overview: This paper directly explores joint multi-task learning where hate speech detection is paired with irony and sarcasm detection as auxiliary objectives. The goal is to enforce shared representation learning so that the encoder captures non-literal tone shifts before assigning hate classification.
+Key Findings: Adding a binary irony/sarcasm head improves hate speech detection accuracy and macro-F1 by allowing shared layers to decouple figurative language from explicit hate keywords.
+Challenges: Task-weight tuning (alpha parameter). If the loss of the binary irony head drops to near zero too quickly, the shared transformer layers stop adapting to ironic subtext and degenerate into standard single-task behavior
+
+
+
+2.  "HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection"
+Authors: Binny Mathew, Punyajoy Saha, Seid Muhie Yimam, Chris Biemann, Pawan Goyal, and Animesh Mukherjee
+Overview: Uses multi-task learning to simultaneously predict a coarse classification target (Hate vs. Offensive vs. Normal), target community identification, and token-level rationale spans (explaining why a text is toxic or ironic).
+Key Findings: Multi-task architectures that force the encoder to learn intermediate structural properties (like identifying target groups or non-literal spans) reduce false positives on sarcastic, non-hateful text.
+Challenges: High loss variance between dense sequential tasks (rationale token classification) and pooled classification heads (binary/multiclass target predictions)
