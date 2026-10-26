@@ -1,0 +1,6 @@
+## After 1st run mistakes:
+
+1. We had a The Code Bug
+2. The Forward Pass Overwriting Issue: We run a forward pass for IHC, then a forward pass for Irony, compute both losses, sum them into total_loss, and call .backward(). Because RoBERTa’s shared weights process both batches sequentially within the same step, gradients from both tasks accumulate correctly into the shared encoder parameters before optimizer.step(). 
+3. Task Difficulty Mismatch: Irony detection (2 classes: N/I) is much easier than 6-class fine-grained implicit hate classification. If alpha = 0.80, you are giving IHC 80% of the gradient weight, which is reasonable since IHC is your primary task.
+4. Dataset Size Imbalance: irony_train_dataset much larger or smaller than ihc_train_dataset. Using itertools.cycle means you are repeatedly looping over the smaller dataset to match the larger one. If the irony dataset is tiny, it might overfit quickly; if it's massive, it might dominate the representation space.
