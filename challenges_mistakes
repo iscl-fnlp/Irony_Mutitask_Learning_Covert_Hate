@@ -8,3 +8,15 @@
 
 ## Challenge 
 The HateXplain dataset contains three annotator labels for each post: `normal`, `hatespeech`, and `offensive`. However, annotators sometimes disagree. In 919 posts, each annotator assigned a different label, leaving no majority label. This creates a problem for supervised learning because each post needs one target label for training and evaluation. Assigning a label arbitrarily could introduce noise into the dataset. Therefore, we need to decide how to handle these disagreements, for example, by excluding tied examples while preserving the original train, validation, and test splits.
+
+- Total posts: 20,148
+- Majority-vote labels:
+  - Normal: 7,814
+  - Hate Speech: 5,935
+  - Offensive: 5,480
+These add up to 19,229, not 20,148.
+
+Missing posts = 20,148 − 19,229 = 919
+
+At the same time, your script reports:
+Tied annotations: 919
