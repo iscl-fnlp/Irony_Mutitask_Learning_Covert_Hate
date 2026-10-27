@@ -31,7 +31,7 @@ The model is exhibiting clear signs of overfitting from Epoch 3 onward.**
 
 
 ### to Solve 
-0. change the model as next experiment.
+
 1. **Implement Early Stopping:** 
 2. **Increase Weight Decay & Dropout:**
 * Boost `weight_decay` in optimizer from `0.01` to `0.05` or `0.1` to penalize large, complex weights.
