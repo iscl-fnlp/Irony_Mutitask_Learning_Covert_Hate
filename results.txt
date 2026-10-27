@@ -97,5 +97,32 @@ Stereotypes         Threats      3
 ## Results 4 Experiment 2 HateXplain dataset fine tuning single task
 
 
+Accuracy        : 0.6949
+Macro Precision : 0.6794
+Macro Recall    : 0.6852
+Macro F1        : 0.6783
+
+Classification Report
+
+              precision    recall  f1-score   support
+
+      Normal     0.7461    0.7327    0.7394       782
+   Offensive     0.5807    0.4726    0.5211       548
+ Hate Speech     0.7113    0.8502    0.7745       594
+
+    accuracy                         0.6949      1924
+   macro avg     0.6794    0.6852    0.6783      1924
+weighted avg     0.6882    0.6949    0.6881      1924
+
+
+Confusion Matrix
+
+[[573 141  68]
+ [152 259 137]
+ [ 43  46 505]]
+
+Saved predictions to:
+/content/drive/MyDrive/implicit_hate_project/roberta_baseline_exp3/test_predictions.csv
+
 Results 5  Experiment 3 Multi task learning Roberts base HateXplain & Irony dataset (common Ground)
 
