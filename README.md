@@ -97,7 +97,17 @@ https://arxiv.org/html/2508.16555v1
 https://cdn.aaai.org/ojs/17745/17745-13-21239-1-2-20210518.pdf?utm_source=chatgpt.com
 
 
+##
 
+## Single-task RoBERTa-base baseline on HateXplain (919 tied samples removed).
+
+Test Accuracy: 69.49%
+Macro Precision: 67.94%
+Macro Recall: 68.52%
+Macro F1-score: 67.83%
+
+Best class: Hate Speech (F1 = 77.45%)
+Most challenging class: Offensive (F1 = 52.11%)
 
 
 
