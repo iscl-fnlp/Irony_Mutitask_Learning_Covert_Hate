@@ -16,6 +16,43 @@ IHC
  +(1−α)⋅L 
 Irony
 ​
+
+##
+
+Load Hate batch
+
+↓
+
+Forward pass
+
+↓
+
+Compute Hate Loss
+
+↓
+
+Load Irony batch
+
+↓
+
+Forward pass
+
+↓
+
+Compute Irony Loss
+
+↓
+
+Combine losses
+
+↓
+
+Backward()
+
+↓
+
+Optimizer.step()
+
  
 ## Evaluation Strategy. 
 Primary metrics focus on Macro-F1 and Accuracy for the main task, comparing the Multi-Task model directly against a Single-Task baseline (trained on the primary task only).
