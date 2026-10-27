@@ -112,6 +112,16 @@ Most challenging class: Offensive (F1 = 52.11%)
 
 
 ##
+
+                    RoBERTa-base
+                         │
+         ┌───────────────┴───────────────┐
+         │                               │
+ Hate Classification Head        Irony Classification Head
+     (3 classes)                     (2 classes)
+
+##
+
 | File | Function |
 |---|---|
 | `dataset.json` | HateXplain posts, text tokens, and annotator labels. |
