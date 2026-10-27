@@ -27,7 +27,7 @@ The model is exhibiting clear signs of overfitting from Epoch 3 onward.**
 ### Why 
 
 * **Model Capacity vs. Dataset Size:** RoBERTa-base has ~125 million parameters. On a specialized dataset like HateXplain, a powerful transformer can easily over-parameterize and memorize the specific phrasing or lexical patterns of the training split within just a few epochs.
-* **Lack of Regularization / High Learning Rate:** 
+* **Lack of Regularization / High Learning Rate:** Offensive class is weak.
 
 
 ### to Solve 
