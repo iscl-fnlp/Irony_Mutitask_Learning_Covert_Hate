@@ -1,4 +1,4 @@
-## Experiment 1 mistakes (task Mismatch): IHC datset 6 categories, iorny 2 categories.
+## Experiment 2 mistakes (task Mismatch): IHC datset 6 categories, iorny 2 categories.
 
 1. We had a The Code Bug
 2. The Forward Pass Overwriting Issue: We run a forward pass for IHC, then a forward pass for Irony, compute both losses, sum them into total_loss, and call .backward(). Because RoBERTa’s shared weights process both batches sequentially within the same step, gradients from both tasks accumulate correctly into the shared encoder parameters before optimizer.step(). 
