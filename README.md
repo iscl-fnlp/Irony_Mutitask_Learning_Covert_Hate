@@ -88,7 +88,7 @@ HateXplain + irony dataset
 A pretrained **RoBERTa** model was fine-tuned for six-class classification, hate speech and Irony.
 
 ## Results .
-https://github.com/iscl-fnlp/Irony_Mutitask_Learning_Covert_Hate/edit/main/README.md#:~:text=results.txt
+https://github.com/iscl-fnlp/Irony_Mutitask_Learning_Covert_Hate/results.txt
 
 In Experiment 1 The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.
 - Accuracy: 64.75%
