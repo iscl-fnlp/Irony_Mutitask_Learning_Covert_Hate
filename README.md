@@ -55,7 +55,28 @@ The data was divided into **training, development, and test sets**, preserving t
 
 
 ## Dataset for experiment 2
+Implicit Hate Speech (IHC) + Irony dataset
+Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. (See more in challenges_mistakes file)
 
+## Irony dataset
+
+
+## Dataset for experiment 3
+HateXplain is a benchmark dataset Mathew et al. (2021)
+https://github.com/hate-alert/HateXplain
+
+Language: English
+Source: Twitter and Gab
+Total Posts: 20,148
+Classes: Normal, Offensive, Hate Speech
+Annotations: Three annotators per post
+Additional Information: Target community labels and token-level rationales for explainability.
+
+
+
+
+
+    
 ## Model
 A pretrained **RoBERTa** model was fine-tuned for six-class classification, hate speech and Irony.
 
