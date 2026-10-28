@@ -59,9 +59,9 @@ The data was divided into **training, development, and test sets**, preserving t
 | Irony       |            79 |
 | Threats     |            66 |
 
+<br>
 
-
-**HateXplain** is a benchmark dataset Mathew et al. (2021)
+The project uses the  **HateXplain** is a benchmark dataset Mathew et al. (2021)
 https://github.com/hate-alert/HateXplain
 
 - Language: English
