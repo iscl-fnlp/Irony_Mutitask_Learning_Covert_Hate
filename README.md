@@ -90,7 +90,7 @@ A pretrained **RoBERTa** model was fine-tuned for six-class classification, hate
 
 ## Results .
 
-In Experiment 1 The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.
+In **Experiment 1** The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.
 - Accuracy: 64.75%
 - Macro-F1: 0.6479.
 - Among the six categories, **Incitement** was the most difficult to detect based on F1 score (**0.6047**), followed by **Inferiority (0.6199)** and **Irony (0.6443)**.
@@ -120,11 +120,12 @@ The largest true → predicted errors were:
 | Stereotypes → Incitement |     11 |
 
 
+<br>
 
 
-In Experiment 2 Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. (See more in challenges_mistakes file)
+In **Experiment 2** Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. (See more in challenges_mistakes file)
 
-In Experiment 3  Single-task RoBERTa-base baseline on HateXplain (919 tied samples removed).
+In **Experiment 3**  Single-task RoBERTa-base baseline on HateXplain (919 tied samples removed).
 
 Test Accuracy: 69.49%
 Macro Precision: 67.94%
@@ -135,7 +136,7 @@ Best class: Hate Speech (F1 = 77.45%)
 Most challenging class: Offensive (F1 = 52.11%)
 
 
-In Experiment 4 Multi Task 
+In **Experiment 4** Multi Task 
 
 
 
@@ -143,20 +144,5 @@ In Experiment 4 Multi Task
 
 ##
 
-| File | Function |
-|---|---|
-| `dataset.json` | HateXplain posts, text tokens, and annotator labels. |
-| `post_id_divisions.json` | Defines HateXplain train, validation, and test splits. |
-| `train.csv` | IHC training data: six implicit-hate categories. |
-| `dev.csv` | IHC development data for validation and model selection. |
-| `test.csv` | IHC test data for final evaluation. |
-| `irony_train.csv` | Irony dataset for auxiliary-task training (`I` / `N`). |
-| `irony_dev.csv` | Irony development data for validation. |
-| `irony_test.csv` | Irony test data for evaluation. |
-| `irony-data.csv` | Original or combined irony data; inspect before using. |
-| `major_confusion.csv` | IHC examples grouped by frequent confusion pairs for manual error analysis. |
-| `misclassified_examples.csv` | IHC test examples the baseline misclassified. |
-| `test_predictions.csv` | IHC test examples with baseline predictions. |
-| `roberta_baseline/` | Saved baseline model checkpoints and training files. |
-| `multitask_roberta_best.pt` | Saved multitask model weights. |
+
 
