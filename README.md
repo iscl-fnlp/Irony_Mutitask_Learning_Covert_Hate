@@ -62,10 +62,10 @@ The data was divided into **training, development, and test sets**, preserving t
 
 ## Dataset for experiment 2
 Implicit Hate Speech (IHC) + Irony dataset
-Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. (See more in challenges_mistakes file)
+
 
 ## Irony dataset
-
+manually annotated ...
 
 ## Dataset for experiment 3
 HateXplain is a benchmark dataset Mathew et al. (2021)
@@ -79,16 +79,20 @@ https://github.com/hate-alert/HateXplain
 - Additional Information: Target community labels and token-level rationales for explainability.
 
 
-
+## Dataset for experiment 4 
+HateXplain + irony dataset 
 
 
     
 ## Model
 A pretrained **RoBERTa** model was fine-tuned for six-class classification, hate speech and Irony.
 
-## Results 1.
-The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.Accuracy: 64.75%
-Macro-F1: 0.6479.
+## Results .
+https://github.com/iscl-fnlp/Irony_Mutitask_Learning_Covert_Hate/edit/main/README.md#:~:text=results.txt
+
+In Experiment 1 The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.
+- Accuracy: 64.75%
+- Macro-F1: 0.6479.
 Among the six categories, **Incitement** was the most difficult to detect based on F1 score (**0.6047**), followed by **Inferiority (0.6199)** and **Irony (0.6443)**.
 
 | Category    | Precision | Recall |     F1 |
@@ -118,18 +122,9 @@ The largest true → predicted errors were:
 
 
 
-related works 
+In Experiment 2 Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. (See more in challenges_mistakes file)
 
-https://arxiv.org/html/2508.16555v1
-
-
-
-https://cdn.aaai.org/ojs/17745/17745-13-21239-1-2-20210518.pdf?utm_source=chatgpt.com
-
-
-##
-
-## Single-task RoBERTa-base baseline on HateXplain (919 tied samples removed).
+In Experiment 3  Single-task RoBERTa-base baseline on HateXplain (919 tied samples removed).
 
 Test Accuracy: 69.49%
 Macro Precision: 67.94%
@@ -139,6 +134,8 @@ Macro F1-score: 67.83%
 Best class: Hate Speech (F1 = 77.45%)
 Most challenging class: Offensive (F1 = 52.11%)
 
+
+In Experiment 4 Multi Task 
 
 
 
