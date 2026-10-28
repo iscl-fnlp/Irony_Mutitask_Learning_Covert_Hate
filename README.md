@@ -65,12 +65,12 @@ Multi task learning Roberta base - attempt failed (results reduced around -0.1)-
 HateXplain is a benchmark dataset Mathew et al. (2021)
 https://github.com/hate-alert/HateXplain
 
-Language: English
-Source: Twitter and Gab
-Total Posts: 20,148
-Classes: Normal, Offensive, Hate Speech
-Annotations: Three annotators per post
-Additional Information: Target community labels and token-level rationales for explainability.
+-Language: English
+-Source: Twitter and Gab
+-Total Posts: 20,148
+-Classes: Normal, Offensive, Hate Speech
+-Annotations: Three annotators per post
+-Additional Information: Target community labels and token-level rationales for explainability.
 
 
 
