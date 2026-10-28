@@ -136,7 +136,12 @@ In **Experiment 3**  Single-task RoBERTa-base baseline on HateXplain (919 tied s
 - Most challenging class: Offensive (F1 = 52.11%)
 
 
-In **Experiment 4** Multi Task 
+In **Experiment 4** Multi Task - **Success**
+
+- Accuracy        : 0.7001
+- Macro Precision : 0.6870
+- Macro Recall    : 0.6895
+- Macro F1        : 0.6878
 
 
 
