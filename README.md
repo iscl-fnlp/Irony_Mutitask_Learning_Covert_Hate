@@ -72,7 +72,7 @@ https://github.com/hate-alert/HateXplain
 - Additional Information: Target community labels and token-level rationales for explainability.
 
 ## Irony dataset
-manually annotated ...
+...
 
 ## Dataset for experiment 1
 Implicit Hate Speech (IHC)
