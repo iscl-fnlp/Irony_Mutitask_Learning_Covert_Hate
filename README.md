@@ -127,7 +127,7 @@ The largest true → predicted errors were:
 
 
 
-In **Experiment 2** Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. (See more in challenges_mistakes file)
+In **Experiment 2** Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. [See more in challenges_mistakes file](challenges_mistakes)
 
 In **Experiment 3**  Single-task RoBERTa-base baseline on HateXplain (919 tied samples removed).
 
