@@ -41,7 +41,7 @@ The original implicit-hate portion contains **6,346 tweets**:
 
 `extra_implicit_class` is an additional label provided by the IHC dataset.
 
-## Data Preparation
+## Test Dataset experiment 1
 The data was divided into **training, development, and test sets**, preserving the original class distribution.The final test set contains **627 examples**:
 
 | Category    | Test examples |
@@ -53,8 +53,11 @@ The data was divided into **training, development, and test sets**, preserving t
 | Irony       |            79 |
 | Threats     |            66 |
 
+
+## Dataset for experiment 2
+
 ## Model
-A pretrained **RoBERTa** model was fine-tuned for six-class classification.The test set was then used only for evaluation.
+A pretrained **RoBERTa** model was fine-tuned for six-class classification, hate speech and Irony.
 
 ## Results 1.
 The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.Accuracy: 64.75%
