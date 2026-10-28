@@ -61,7 +61,7 @@ The data was divided into **training, development, and test sets**, preserving t
 
 <br>
 
-```
+
 
 The project uses the  **HateXplain** is a benchmark dataset Mathew et al. (2021)
 https://github.com/hate-alert/HateXplain
@@ -74,7 +74,6 @@ https://github.com/hate-alert/HateXplain
 - Additional Information: Target community labels and token-level rationales for explainability.
 
 ## Irony dataset
-...
 
 ## Dataset for experiment 1
 Implicit Hate Speech (IHC)
@@ -125,7 +124,7 @@ The largest true → predicted errors were:
 
 <br>
 
-```
+
 
 In **Experiment 2** Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. (See more in challenges_mistakes file)
 
@@ -151,7 +150,7 @@ In **Experiment 4** Multi Task - **Success**
 
 
 
-```
+
 
 ## Conclusion
 
@@ -171,6 +170,4 @@ Several directions could further improve the proposed approach:
 - Evaluate alternative multi-task architectures, including task-specific adapters and attention-based sharing mechanisms.
 - Perform extensive ablation studies to better understand the contribution of the auxiliary irony detection task.
 
-
-```
 
