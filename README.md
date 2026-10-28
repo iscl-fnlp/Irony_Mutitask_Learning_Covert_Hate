@@ -24,9 +24,9 @@ Hypothesis: Fine-tuning a shared Transformer encoder (RoBERTa) using Multi-Task 
 
 # Overall
 ### experiment 1 hate speech classification (6 categories) by fine tuning 
-### experiment 1 hate speech classification (6 categories) by multi task learning Irony + IHC
-### experiment 1 Hate speech detection single task fine tuning HateXplain 
-### experiment 1 Hate speech detection multi task learning hateXplain + Irony 
+### experiment 2 hate speech classification (6 categories) by multi task learning Irony + IHC
+### experiment 3 Hate speech detection single task fine tuning HateXplain 
+### experiment 4 Hate speech detection multi task learning hateXplain + Irony 
 
 ##
 
