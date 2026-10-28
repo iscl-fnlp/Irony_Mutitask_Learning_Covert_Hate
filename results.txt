@@ -1,5 +1,5 @@
-## Results 1. IHC dataset (6 categories) fine tuning 
-
+## Results 1. IHC dataset (6 categories) fine tuning Roberta 
+Accepted
 
 Epoch	Train.L	Val.Loss	Accuracy	Macro F1	Weighted F1
 1	    1.044904	0.964226	0.661882	0.657884	0.660859
@@ -88,14 +88,17 @@ Stereotypes         Threats      3
 
 
 
-## Results 2  Experiment 1 mistake task mismatch first attempt Mutli task
+## Results 2  
+mistake - task mismatch first attempt Mutli task learning
+(See Challenges_Mistakes  file)
 
+## Results 3 
+Experiment 2 HateXplain dataset fine tuning single task mistake - overfitting 
+(See Challenges_Mistakes  file)
 
-## Results 3 Experiment 2 HateXplain dataset fine tuning single task mistake overfitting 
-
-
-## Results 4 Experiment 2 HateXplain dataset fine tuning single task
-
+## Results 4 
+Experiment 2 HateXplain dataset fine tuning single task
+Accepted
 
 Accuracy        : 0.6949
 Macro Precision : 0.6794
@@ -124,5 +127,38 @@ Confusion Matrix
 Saved predictions to:
 /content/drive/MyDrive/implicit_hate_project/roberta_baseline_exp3/test_predictions.csv
 
-Results 5  Experiment 3 Multi task learning Roberts base HateXplain & Irony dataset (common Ground)
+Results 5  
+Experiment 3 Multi task learning Roberts base HateXplain & Irony dataset
+(Accepted)
+
+
+Accuracy        : 0.7001
+Macro Precision : 0.6870
+Macro Recall    : 0.6895
+Macro F1        : 0.6878
+
+Classification Report
+
+              precision    recall  f1-score   support
+
+      Normal     0.7583    0.7583    0.7583       782
+   Offensive     0.5634    0.5274    0.5448       548
+ Hate Speech     0.7393    0.7828    0.7604       594
+
+    accuracy                         0.7001      1924
+   macro avg     0.6870    0.6895    0.6878      1924
+weighted avg     0.6969    0.7001    0.6981      1924
+
+
+Confusion Matrix
+
+[[593 134  55]
+ [150 289 109]
+ [ 39  90 465]]
+
+Saved predictions to:
+/content/drive/MyDrive/implicit_hate_project/multitask_test_predictions.csv
+
+Saved training history to:
+/content/drive/MyDrive/implicit_hate_project/multitask_training_history.csv
 
