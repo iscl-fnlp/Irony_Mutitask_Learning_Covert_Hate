@@ -22,11 +22,11 @@ Hypothesis: Fine-tuning a shared Transformer encoder (RoBERTa) using Multi-Task 
 * **Stereotypes** — Linking a group to a negative general belief or characteristic. “They are all lazy.”
 * **Threats** — Suggesting or expressing harm toward a group. “They should be afraid of us.”
 
-# overall
-## experiment 1 hate speech classification (6 categories) by fine tuning 
-## experiment 1 hate speech classification (6 categories) by multi task learning Irony + IHC
-## experiment 1 Hate speech detection single task fine tuning HateXplain 
-## experiment 1 Hate speech detection multi task learning hateXplain + Irony 
+# Overall
+### experiment 1 hate speech classification (6 categories) by fine tuning 
+### experiment 1 hate speech classification (6 categories) by multi task learning Irony + IHC
+### experiment 1 Hate speech detection single task fine tuning HateXplain 
+### experiment 1 Hate speech detection multi task learning hateXplain + Irony 
 
 ## Dataset for experiment 1
 The project uses the **Implicit Hate Speech (IHC)** dataset introduced by ElSherief et al.
