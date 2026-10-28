@@ -89,15 +89,15 @@ Stereotypes         Threats      3
 
 
 ## Results 2  
-mistake - task mismatch first attempt Mutli task learning
+Experiment 2  mistake - task mismatch first attempt Mutli task learning
 (See Challenges_Mistakes  file)
 
 ## Results 3 
-Experiment 2 HateXplain dataset fine tuning single task mistake - overfitting 
+Experiment 3 HateXplain dataset fine tuning single task mistake - overfitting 
 (See Challenges_Mistakes  file)
 
 ## Results 4 
-Experiment 2 HateXplain dataset fine tuning single task
+Experiment 3 attempt 2 HateXplain dataset fine tuning single task
 Accepted
 
 Accuracy        : 0.6949
@@ -128,7 +128,7 @@ Saved predictions to:
 /content/drive/MyDrive/implicit_hate_project/roberta_baseline_exp3/test_predictions.csv
 
 Results 5  
-Experiment 3 Multi task learning Roberts base HateXplain & Irony dataset
+Experiment 4 Multi task learning Roberts base HateXplain & Irony dataset
 (Accepted)
 
 
