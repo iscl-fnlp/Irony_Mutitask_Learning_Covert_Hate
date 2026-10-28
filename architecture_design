@@ -5,19 +5,7 @@ Head A: Classifies Hate Speech.
 Head B: Classifies Irony.
 ## Testing Methodology
 Shared Gradient Updates: In every step (or every few steps), gradients flow backwards from both heads into the shared Transformer backbone.
-Loss Weighting (α): The combined loss is formulated as:
 
-L 
-total
-​	
- =α⋅L 
-IHC
-​	
- +(1−α)⋅L 
-Irony
-​
-
-##
 
 Load Hate batch
 
@@ -61,3 +49,18 @@ Since HateXplain is not perfectly balanced, Macro F1 is the most important metri
 - Offensive
 - Hate Speech
 This prevents the model from looking good simply because it predicts the majority class well.
+
+
+Loss Weighting (α): The combined loss is formulated as:
+
+L 
+total
+​	
+ =α⋅L 
+IHC
+​	
+ +(1−α)⋅L 
+Irony
+​
+
+##
