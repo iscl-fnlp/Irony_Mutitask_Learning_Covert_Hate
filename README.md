@@ -93,7 +93,7 @@ A pretrained **RoBERTa** model was fine-tuned for six-class classification, hate
 In Experiment 1 The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.
 - Accuracy: 64.75%
 - Macro-F1: 0.6479.
-Among the six categories, **Incitement** was the most difficult to detect based on F1 score (**0.6047**), followed by **Inferiority (0.6199)** and **Irony (0.6443)**.
+- Among the six categories, **Incitement** was the most difficult to detect based on F1 score (**0.6047**), followed by **Inferiority (0.6199)** and **Irony (0.6443)**.
 
 | Category    | Precision | Recall |     F1 |
 | ----------- | --------: | -----: | -----: |
