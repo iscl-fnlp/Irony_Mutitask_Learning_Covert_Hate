@@ -127,13 +127,13 @@ In **Experiment 2** Multi task learning Roberta base - attempt failed (results r
 
 In **Experiment 3**  Single-task RoBERTa-base baseline on HateXplain (919 tied samples removed).
 
-Test Accuracy: 69.49%
-Macro Precision: 67.94%
-Macro Recall: 68.52%
-Macro F1-score: 67.83%
+- Test Accuracy: 69.49%
+- Macro Precision: 67.94%
+- Macro Recall: 68.52%
+- Macro F1-score: 67.83%
 
-Best class: Hate Speech (F1 = 77.45%)
-Most challenging class: Offensive (F1 = 52.11%)
+- Best class: Hate Speech (F1 = 77.45%)
+- Most challenging class: Offensive (F1 = 52.11%)
 
 
 In **Experiment 4** Multi Task 
