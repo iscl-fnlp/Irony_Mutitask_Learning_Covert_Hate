@@ -6,7 +6,7 @@
 
 
 
-## Challenge 
+## Challenge Experiment 2
 The HateXplain dataset contains three annotator labels for each post: `normal`, `hatespeech`, and `offensive`. However, annotators sometimes disagree. In 919 posts, each annotator assigned a different label, leaving no majority label. This creates a problem for supervised learning because each post needs one target label for training and evaluation. Assigning a label arbitrarily could introduce noise into the dataset. Therefore, we need to decide how to handle these disagreements, for example, by excluding tied examples while preserving the original train, validation, and test splits.
 - Total posts: 20,148
 - Majority-vote labels:
@@ -23,9 +23,8 @@ The model is exhibiting clear signs of overfitting from Epoch 3 onward.**
 1.Training loss drops consistently and sharply across all 5 epochs—falling from `0.8152` all the way down to `0.3820`. The model is memorizing and fitting the training data extremely well.
 2.Validation loss decreases initially (reaching a low point of `0.7474` at Epoch 1), but then **increases significantly** in subsequent epochs, climbing all the way up to `0.9085` by Epoch 5. When validation loss goes up while training loss goes down, it is the textbook definition of overfitting (the model is losing generalization capability and memorizing noise).
 
-
 ### Why 
-
+Possibly:
 * **Model Capacity vs. Dataset Size:** RoBERTa-base has ~125 million parameters. On a specialized dataset like HateXplain, a powerful transformer can easily over-parameterize and memorize the specific phrasing or lexical patterns of the training split within just a few epochs.
 * **Lack of Regularization / High Learning Rate:** Offensive class is weak.
 
