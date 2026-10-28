@@ -88,6 +88,7 @@ HateXplain + irony dataset
     
 ## Model
 A pretrained **RoBERTa** model was fine-tuned for six-class classification, hate speech and Irony.
+[RoBERTa-base](https://huggingface.co/FacebookAI/roberta-base)
 
 ## Results .
 [more detailed ](results.txt)
