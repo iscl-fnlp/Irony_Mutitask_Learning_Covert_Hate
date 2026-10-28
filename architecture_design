@@ -3,6 +3,20 @@ A single, shared Transformer encoder learns general representations.
 Two separate dense Linear projection layers sit on top of the shared [CLS] token output:
 Head A: Classifies Hate Speech.
 Head B: Classifies Irony.
+
+
+            RoBERTa-base
+                         │
+         ┌───────────────┴───────────────┐
+         │                               │
+ Hate Classification Head        Irony Classification Head
+     (3 classes)                     (2 classes)
+
+
+
+
+
+
 ## Testing Methodology
 Shared Gradient Updates: In every step (or every few steps), gradients flow backwards from both heads into the shared Transformer backbone.
 
