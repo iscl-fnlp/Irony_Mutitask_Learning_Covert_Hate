@@ -30,7 +30,7 @@ Hypothesis: Fine-tuning a shared Transformer encoder (RoBERTa) using Multi-Task 
 
 ##
 
-## Dataset for experiment 1
+# Datasets 
 The project uses the **Implicit Hate Speech (IHC)** dataset introduced by ElSherief et al.
 Dataset: [SALT-NLP/implicit-hate](https://github.com/SALT-NLP/implicit-hate)
 The original implicit-hate portion contains **6,346 tweets**:
@@ -47,7 +47,7 @@ The original implicit-hate portion contains **6,346 tweets**:
 
 `extra_implicit_class` is an additional label provided by the IHC dataset.
 
-## Test Dataset experiment 1
+## Test Dataset 
 The data was divided into **training, development, and test sets**, preserving the original class distribution.The final test set contains **627 examples**:
 
 | Category    | Test examples |
@@ -60,15 +60,8 @@ The data was divided into **training, development, and test sets**, preserving t
 | Threats     |            66 |
 
 
-## Dataset for experiment 2
-Implicit Hate Speech (IHC) + Irony dataset
 
-
-## Irony dataset
-manually annotated ...
-
-## Dataset for experiment 3
-HateXplain is a benchmark dataset Mathew et al. (2021)
+**HateXplain** is a benchmark dataset Mathew et al. (2021)
 https://github.com/hate-alert/HateXplain
 
 - Language: English
@@ -78,7 +71,15 @@ https://github.com/hate-alert/HateXplain
 - Annotations: Three annotators per post
 - Additional Information: Target community labels and token-level rationales for explainability.
 
+## Irony dataset
+manually annotated ...
 
+## Dataset for experiment 1
+Implicit Hate Speech (IHC)
+## Dataset for experiment 2
+Implicit Hate Speech (IHC) + Irony dataset
+## Dataset for experiment 3
+HateXplain
 ## Dataset for experiment 4 
 HateXplain + irony dataset 
 
@@ -88,7 +89,6 @@ HateXplain + irony dataset
 A pretrained **RoBERTa** model was fine-tuned for six-class classification, hate speech and Irony.
 
 ## Results .
-https://github.com/iscl-fnlp/Irony_Mutitask_Learning_Covert_Hate/results.txt
 
 In Experiment 1 The model correctly classified **406 / 627 (64.7%)** examples and misclassified **221 / 627 (35.3%)**.
 - Accuracy: 64.75%
