@@ -11,8 +11,10 @@ How does the model’s misclassification behaviour look across implicit hate-spe
 Hypothesis: Fine-tuning a shared Transformer encoder (RoBERTa) using Multi-Task Learning on Binary Hate Speech Detection (Primary Task) and Binary Irony Detection (Auxiliary Task) forces the model to capture non-literal tone shifts and figurative context. This prevents the shared layers from relying solely on explicit toxic keywords, thereby improving overall Hate Speech Detection Macro-F1 and Accuracy.
 
 
-**implicit/covert hate speech**: the hateful meaning is conveyed indirectly rather than necessarily stated overtly.
+
 ## Hate Speech Categories
+
+**implicit/covert hate speech**: the hateful meaning is conveyed indirectly rather than necessarily stated overtly.
 * **Grievance** — Complaining or blaming a group for a problem: “They are taking our jobs”
 * **Incitement** — Encouraging people to act against a group. “Send them all back.”
 * **Inferiority** — Saying or implying that a group is less capable or less worthy. “They are less intelligent.”
