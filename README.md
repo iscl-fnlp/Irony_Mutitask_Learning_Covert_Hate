@@ -61,6 +61,8 @@ The data was divided into **training, development, and test sets**, preserving t
 
 <br>
 
+```
+
 The project uses the  **HateXplain** is a benchmark dataset Mathew et al. (2021)
 https://github.com/hate-alert/HateXplain
 
@@ -123,6 +125,7 @@ The largest true → predicted errors were:
 
 <br>
 
+```
 
 In **Experiment 2** Multi task learning Roberta base - attempt failed (results reduced around -0.1)- task mismatch. (See more in challenges_mistakes file)
 
@@ -148,7 +151,26 @@ In **Experiment 4** Multi Task - **Success**
 
 
 
-##
+```
+
+## Conclusion
 
 
+The experimental results showed that the multi-task model achieved a higher overall performance than the single-task baseline. In particular, Macro-F1 improved by approximately **1 percentage point**, together with modest gains in accuracy, macro precision, and macro recall. These findings suggest that incorporating an auxiliary irony detection task can help the shared encoder learn richer contextual representations and better distinguish implicit and non-literal language.
+
+However, the experiments also highlighted that successful multi-task learning depends heavily on careful architectural design and hyperparameter selection. Factors such as loss weighting, task balance, learning rate, regularization, and shared representation learning have a significant impact on performance. Simply combining two tasks does not automatically guarantee better results.
+
+## Future Work
+
+Several directions could further improve the proposed approach:
+
+- Investigate larger and more diverse auxiliary datasets for irony, sarcasm, or figurative language detection.
+- Experiment with more advanced Transformer architectures such as **DeBERTa**, **RoBERTa-Large**, or domain-specific language models.
+- Explore different task loss weighting strategies (e.g., dynamic weighting instead of a fixed α value).
+- Study additional regularization techniques and hyperparameter optimization to reduce overfitting.
+- Evaluate alternative multi-task architectures, including task-specific adapters and attention-based sharing mechanisms.
+- Perform extensive ablation studies to better understand the contribution of the auxiliary irony detection task.
+
+
+```
 
