@@ -4,9 +4,9 @@ Irony-Aware Multitask Learning for Implicit Hate Speech
 
 **implicit/covert hate speech**: the hateful meaning is conveyed indirectly rather than necessarily stated overtly.
 
-RQ1. Is Irony as  implicit hate-speech category is the hardest for a fine-tuned RoBERTa model to detect?
+- RQ1. Is Irony as  implicit hate-speech category is the hardest for a fine-tuned RoBERTa model to detect?
 How does the model’s misclassification behaviour look across implicit hate-speech categories? Specifically, which categories are most frequently confused with one another?
-RQ2.Does knowledge of irony help improve implicit hate-speech classification through multitask learning?
+- RQ2.Does knowledge of irony help improve implicit hate-speech classification through multitask learning?
 
 
 ## Research Hypothesis
