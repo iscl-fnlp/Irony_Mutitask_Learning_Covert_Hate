@@ -28,7 +28,7 @@ Hypothesis: Fine-tuning a shared Transformer encoder (RoBERTa) using Multi-Task 
 ### experiment 1 Hate speech detection single task fine tuning HateXplain 
 ### experiment 1 Hate speech detection multi task learning hateXplain + Irony 
 
-
+#
 
 ## Dataset for experiment 1
 The project uses the **Implicit Hate Speech (IHC)** dataset introduced by ElSherief et al.
